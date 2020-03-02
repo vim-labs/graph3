@@ -6,27 +6,27 @@ A distributed Web3 hypergraph.
 
 **Create Node / change class (drop with empty class):**
 
-* **node**(*string* **id**, *string* **class**, string **subclass**)
+- **node**(_string_ **id**, _string_ **class**, string **subclass**)
 
 **Add a property to a node / link (drop with empty prop/value):**
 
-* **prop**(*string* **id**, *string* **prop**, *string* **value**)
+- **prop**(_string_ **id**, _string_ **prop**, _string_ **value**)
 
 **Link nodes & links or change class (unlink with empty class):**
 
-* **link**(*string* **from**, *string* **to**, *string* **class**) 
+- **link**(_string_ **from**, _string_ **to**, _string_ **class**)
 
 **Signed batch transaction:**
 
-```json
+```
 [
   [...eventNumbers],
-  [...[arg0, arg1, arg2]], 
+  [...[arg0, arg1, arg2]],
   [...keccak256([...eventNumbers, ...args])]
 ]
 ```
 
-* **batch**(*uint256[]* **events**, *string[3][]* **args**, *bytes32[]* **sig**)
+- **batch**(_uint256[]_ **events**, _string[3][]_ **args**, _bytes32[]_ **sig**)
 
 ### Mainnet contract:
 
