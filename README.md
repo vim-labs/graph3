@@ -1,6 +1,6 @@
 # graph3
 
-A distributed Web3 hypergraph.
+A distributed Web3 stateless smart contract hypergraph.
 
 ### API:
 
